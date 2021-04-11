@@ -4,7 +4,7 @@
 figure {
     display: inline-block;   /* インラインブロック化 */
     margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
-    background-color: #ffffff; 
+    background-color: #efefef; 
 }
 figure img {
     display: block;          /* 余計な余白が出ないようにする */
@@ -30,14 +30,15 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #fffffff;
+	background: #ffffff;
 }
 h1{
     text-indent: 0em;
 }
 h2{
-    margin-left: 2em;
-    margin-top: 2em;
+	margin: 50px 0 40px 0;
+	line-height: 0;
+	text-align: center;
 }
 h3{
     margin-left: 3em;
@@ -56,6 +57,7 @@ span.blackback{
 		line-height: 0;
 		text-align: center;
 }
+/*ナビゲーション*/
 .nav li {
 		display: inline;
 		list-style-type: none;
@@ -64,6 +66,7 @@ span.blackback{
 .nav ul {
 		border: 3px solid #ccffff;
 }
+
 /* スマートフォン向けCSS */
 @media (max-width: 767px) {
 		/*全体 - ナビゲーション */
