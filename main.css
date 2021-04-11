@@ -20,6 +20,9 @@ figcaption {
     text-align: center;      /* 中身をセンタリング */
     word-wrap: break-word;
 }
+.top {
+		text-align: center;
+}
 /* ---------------------------------------------------------------------------*/
 
 
@@ -43,8 +46,10 @@ h2{
 h3{
     margin-left: 3em;
 }
-p,div{
-    margin-left: 5em;
+
+img {
+		max-width: 100%;
+		height: auto;
 }
 span.blackback{
     text-indent: 4em;
@@ -64,26 +69,7 @@ span.blackback{
 		padding-right: 30px;
 }
 .nav ul {
-		margin: 0 0 0 0;
-		padding: 20px 10px 15px 20px;
-		background-image: url(../images/border3.png);
-		background-repeat: repeat-x;
-}
-.nav a:link {
-		color: #3c454d;
-		text-decoration: none;
-}
-.nav a:visited {
-		color: #3c454d;
-		text-decoration: none;
-}
-.nav a:hover {
-		color: #5a9bc0;
-		text-decoration: none;
-}
-.nav a:active {
-		color: #5a9bc0;
-		text-decoration: none;
+
 }
 
 /* スマートフォン向けCSS */
