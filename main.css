@@ -71,6 +71,10 @@ span.blackback{
 .nav ul {
 
 }
+/* すべてのページに適用 - フッター - */
+.footer {
+		border-top: 3px dotted #3f5170;
+}
 
 /* スマートフォン向けCSS */
 @media (max-width: 767px) {
