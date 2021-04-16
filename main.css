@@ -75,7 +75,8 @@ span.blackback{
 .footer {
 		border-top: 3px dotted #3f5170;
 }
-
+#slider
+margin-top: -30px;
 /* スマートフォン向けCSS */
 @media (max-width: 767px) {
 		/*全体 - ナビゲーション */
