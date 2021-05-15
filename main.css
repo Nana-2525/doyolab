@@ -136,49 +136,6 @@ input[type="submit"] {
 		padding: 1em;
 }
 
-/* 2021-0513.html*/
-.0513-item {
-		display: flex;
-		border-bottom: 1px dashed #bec2c7;
-		padding: 20px 8px;
-}
-.0513-photo {
-		margin-right: 16px;
-		flex: 1 1 auto
-}
-.0513-text
-		flex: 0 0 336px;
-}
-/* sns.html*/
-.sns-item {
-		display: flex;
-		padding: 20px 8px;
-}
-.sns-photo {
-		margin-right: 16px;
-	
-}
-
-/* syokyuu2.html.html*/
-.syokyuu2-item {
-		display: flex;
-		border-bottom: 1px dashed #bec2c7;
-		padding: 20px 8px;
-}
-.syokyuu2-photo {
-		margin-right: 16px;
-}
-
-/* syokyuu3.html.html*/
-.syokyuu3-item {
-		display: flex;
-		border-bottom: 1px dashed #bec2c7;
-		padding: 20px 8px;
-}
-.syokyuu3-photo {
-		margin-right: 16px;
-}
-
 /* tyuukyuu1.html.html*/
 .tyuukyuu1-item {
 		display: flex;
