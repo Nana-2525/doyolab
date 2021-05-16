@@ -87,56 +87,37 @@ img {
 /* すべてのページに適用 - フッター - */
 .footer {
 		border-top: 3px dotted #3f5170;
-}
-
-/* landscape.html */
-.photo {
-		text-align: center;
-}
-}
-/* flower.html */
-.photo {
-		text-align: center;
-}
-}
-/* original.html */
-.photo {
-		text-align: center;
-}
-}
+}	
+/* ---------------------------------------------------------------------------*/
 /* index.html */
 .top {
 		text-align: center;
 }
-/* request.html */
-form div {
-		padding:12px;
-		border-bottom: 1px dashed #bec2c7;
-}
-select {
-		width: 30em;
-}
-textarea {
-		width: 30em;
-		height: 6em;
-}
-input[type="submit"] {
-		margin: 20px 0;
-		width: 30em;
-}
-/* lecture.html*/
-.lecture-item {
-		display: flex;
-		padding: 0px 1px 0px 8px;
-}
-.lecture-photo {
-		margin-right: 16px;
-}
-.lecture-text {
-		padding: 1em;
-}
 
-/* tyuukyuu1.html.html*/
+dl{
+	background:#cef9dc;
+	padding:10px;
+	width:550px;
+	}
+dt{
+	color:navy;
+	font-weight:bold;
+	padding:0 10px 0 0;
+	width:120px;
+	float:left;
+	margin-bottom:7px;
+	}
+dd{
+	color:#333;
+	margin-bottom:7px;
+	}
+dl{
+	content: '';
+	display: block;
+	clear: both;
+	}
+
+/* 2021-0513.html*/
 .tyuukyuu1-item {
 		display: flex;
 		border-bottom: 1px dashed #bec2c7;
@@ -146,25 +127,7 @@ input[type="submit"] {
 		margin-right: 16px;
 }
 
-/* tyuukyuu2.html.html*/
-.tyuukyuu2-item {
-		display: flex;
-		border-bottom: 1px dashed #bec2c7;
-		padding: 20px 8px;
-}
-.tyuukyuu2-photo {
-		margin-right: 16px;
-}
-
-/* tyuukyuu3.html.html*/
-.tyuukyuu3-item {
-		display: flex;
-		border-bottom: 1px dashed #bec2c7;
-		padding: 20px 8px;
-}
-.tyuukyuu3-photo {
-		margin-right: 16px;
-}
+/* ---------------------------------------------------------------------------*/
 /* スマートフォン向けCSS */
 @media (max-width: 767px) {
 		/*全体 - ナビゲーション */
