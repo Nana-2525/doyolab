@@ -26,101 +26,93 @@
 	</div>
     <br></br>
    <div>
-		<center
-		><h1>Unityの操作に慣れてみる</h1>
-		<p>購入したUnityの教科書を参考に動かしてみました。</p>
+		<center>
+		<h1>Unity内でスクリプト作成</h1>
+		<p>unityでvisual syudioを使用してスクリプト/プログラミング言語を書く段階まで設定を行う。</p>
+		<p>思いがけないミスも発見しました。(完全に私のミス)その改善の仕方も記述します。</p>
 		</center>
 	<br></br>
 	<main>	
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">Unityの画面構成</font></h2>
-							<img src="images/unity1-1.jpg" alt="" width="550" height="250">
-								<strong><p>・シーンビュー</p></strong>
-									<p>ゲームを組み立てるためのメイン画面。素材を配置してゲームのシーンを作成するのが主な役割です。ビュー上のタブで、ゲームビューに切り替え可能です</p>
-								<strong>・ゲームビュー</strong>
-									<p>ゲームを実行したときの見え方を確認するほか、ゲーム時の処理スピードや負荷のかかり方などを解析できる。</p>
-								<strong><p>・インスペクターウィンドウ</p></strong>
-									<p>シーンビューで選択したオブジェクトの詳しい情報が表示される。インスペクターでオブジェクトの座標・回転・スケール(サイズ)や色、形などを設定する。</p>
-								<strong><p>・プロジェクトウィンドウ</p></strong>
-									<p>ゲームで使う素材を管理する。このウィンドウに画像や音声などの素材をドラック&ドロップすることで、Unityにゲームの素材として追加することができる。</p>
-								<strong><p>・コンソールウィンドウ</p></strong>
-									<p>プログラムなどにエラーがある場合、その内容が表示される。プログラムによって任意の数値や文字列を表示されることができる。</p>
-								<strong><p>・ヒエラルキーウィンドウ</p></strong>
-									<p>シーンビューに配置したオブジェクトの名前を一覧で表示する。また、オブジェクト同士の階層構造を表示したり編集したりする。</p>
-								<strong><p>・操作ツール</p></strong>
-									<p>シーンビューに配置したオブジェクトの座標や回転、サイズを調整したり、シーンビューの見方を調整したりするためのツール</p>
-								<strong><p>・実行ツール</p></strong>
-									<p>ゲームの実行や停止を行うツール</p>
+							<h2><font color="blue">プロジェクトの作成(今回は2D)</font></h2>
+								<p>プロジェクトの作成はActivities/April/4/29報告のUnity内のプロジェクト作成を参考に以下の通りに作る。</p>
+								<p><font color="red">プロジェクト名/Sample</font></p>
+								<p><font color="red">テンプレート/2D</font></p>
+								<img src="images/0520unity1.jpg" alt="" width="550" height="350">
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">立方体を追加する</font></h2>
-							<img src="images/unity1-2.jpg" alt="" width="550" height="350">
-								<p>画像のような状態で、ヒエラルキーウィンドウ内の+マークをクリックして、3D Object→Cubeを選択する。</p>
-							<img src="images/unity1-3.jpg" alt="" width="550" height="350">
-								<p>すると、シーンビュー中央に立方体が表示されます。それに対応して、ヒエラルキーウィンドウに「Cube」の項目が表示されます。</p>
+							<h2><font color="blue">スクリプトの作成</font></h2>
+							<img src="images/0520unity2.jpg" alt="" width="550" height="350">
+								<p>Unityエディタが起動したら、</p>
+								<p>Projectタブを選択する</p>
+								<p>プロジェクトウインドウ内で右クリック</p>
+								<p>表示されたメニュー内からCreate→C#Scriptを選択する。</p>
+							<img src="images/0520unity3.jpg" alt="" width="550" height="350">
+								<p>作成されたファイル名を「Test」に変更する。</p>
 					</div>
 			</div>
 		
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">立方体の情報を確認する。</font></h2>
-							<img src="images/cubu0.jpg" alt="" width="550" height="350">
-								<p>ヒエラルキーウィンドウでCubeを選択すると、画面右側のインスペクターウィンドウにCubeの詳細情報が表示されます。<p>
-								<p>シーン中のオブジェクト(立方体)の位置は座標値(X・Y・Z)を使って表します。</p>
-								<p>インスペクターのTransform項目にあるPosition欄を見ると、「X」「Y」「Z」が「0」「0」「0」になっています。</p>
-								<p>これはオブジェクト(立方体)のXYZの座標がそれぞれ「0」であることを意味します。</p>
-								<p>※X・Y・Zがすべて「0」の点を原点と呼ぶ。</p>
+							<h2><font color="blue">ゲームオブジェクトの作成</font></h2>
+							<img src="images/0520unity4.jpg" alt="" width="550" height="350">
+								<p>ヒエラルキーウィンドウから+マーク→Create Emptyを選択してください。<p>
+							<img src="images/0520unity6.jpg" alt="" width="550" height="350">
+							<p>すると、GameObjectが作成されます。</p>
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">Unity3D座標系と見え方のイメージ</font></h2>
-							<img src="images/cubu2.jpg" alt="" width="550" height="350">
-								<p>Unityで3Dゲームを作るときには、空間の把握が非常に大切です。</p>
-								<p><font color="red">ゲームを作り始める前に、何をどこに配置するのかしっかり決めておかなければならない。</font></p>
-								<p>※上の画像は、シーンビューを表示しているときの座標の見え方です。</p>
-							<img src="images/cubu1.jpg" alt="" width="550" height="350">
-								<p>※上の画像は、ヒエラルキーウィンドウにあるMain Cameraを選択したときの見方です。<p>
+							<h2><font color="blue">スクリプトのアタッチ</font></h2>
+							<img src="images/0520unity5.jpg" alt="" width="550" height="350">
+								<p>作成した「Test」スクリプトをヒエラルキーウィンドウの「GameObject」にドラッグ&ドロップします。</p>
+								<p>これはアタッチという作業で、スクリプトをゲームオブジェクトに結び付けることで、スクリプトを実行できるようにしています。</p>
+								<p>※アタッチできているかどうかは、インスペクターウインドウのTransform下にTest(Script)が表示されていれば成功です。</p>
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">シーンビューで視点を操作する</font></h2>
-								<p>ここでは、操作ツール内の✋マークを使っていきます。</p>
-							<h2>視点のズームイン・ズームアウト</h2>
-								<p>シーンのズームインとズームアウトはマウスホイールで行います。マウスホイールを手前or奥川に回すとできます。</p>
-								<p>MacのノートPCでは二本指で上下に動かすとできました。</p>
-							<h2>視点の平行移動</h2>
-								<p>操作ツールにある、✋マークを選択します。すると、マウスアイコンが手の形に変わります。</p>
-								<p>この状態で画面上をドラッグした方向に画面が平行移動します。</p>
-							<h2>視点の回転</h2>
-								<p>シーンビューで視点の位置を回転させる場合、macOSの場合は「option」キーを押しながら画面上をドラッグすると視点が回転します。<p>
-								<p>シーンビュー右上にある、シーンギズモの円錐をクリックすると、クリックした方向から眺めた視点になります。</p>
+							<h2><font color="blue">スクリプトファイルを開く</font></h2>
+							<img src="images/0520unity7.jpg" alt="" width="550" height="350">
+								<p>「Test」をダブルクリックすると、スクリプトを記述するとVisual Studioが起動してスクリプトが表示されます。</p>
+							<img src="images/0520unity8.jpg" alt="" width="550" height="350">
+								<h1><font color="red">???????????</font></h1>
+								<p>そう。Visual Studioではなくターミナルがでてきちゃったんですー(泣)</p>
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-							<h2><font color="blue">オブジェクト(立方体)を変形する</font></h2>
-								<p>ここでは、操作ツール内の「上下左右の矢印マーク」を使っていきます。</p>
-							<h2>オブジェクト(立方体)を移動する</h2>
-							<img src="images/cube3.jpg" alt="" width="550" height="350">
-								<p>操作ツールにある、上下左右の矢印マークを選択します。</p>
-								<p>ヒエラルキーウィンドウでCubeを選択します。</p>
-								<p>X(<font color="red">赤</font>)Y(<font color="green">緑</font>)Z(<font color="blue">青</font>)いずれかの矢印にカーソルわ合わせて動かすと、それぞれの軸方向にオブジェクト(立方体)が移動します。</p>
-							<h2>オブジェクト(立方体)を回転する</h2>
-								<p>ここでは、操作ツールの🔄マークを使っていきます。</p>
-							<img src="images/cube4.jpg" alt="" width="550" height="350">
-								<p>操作ツールにある🔄マークを選択します。</p>
-								<p>ヒエラルキーウィンドウでCubeを選択すると、立方体上のカーソルが円形に変わります。</p>
+							<h2><font color="blue">痛恨のミス</font></h2>
+								<p>ここで気づいたのですが、そもそも私Visual Studioインストールしてなかったみたいなんです。</p>
+								<p>やっちゃった(´・ω・)......。</p>
+								<p>急いでインストールしました。</p>
 					</div>
 			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">Visual Studioを後からインストールしてからスクリプトを開けるようにする</font></h2>
+							<img src="images/0520unity9.jpg" alt="" width="550" height="350">
+								<p>まず、Unityエディタを開きます。</p>
+								<p>開いた状態で、デスクトップ左上の「Unity」アイコンをクリック→「Preferences」をクリックします。</p>
+							<img src="images/0520unity10.jpg" alt="" width="550" height="350">
+								<p>次に、「External Tools」→「External Script Editor」をVisual Studioに変更します。</p>
+								<p>変更したらUnity エディタに戻り、再度「Test」をダブルクリックする。</p>
+							<img src="images/0520unity11.jpg" alt="" width="550" height="350">
+								<p>ちゃんとVisual Studioで開くことが出来ました。</p>
+								<p>Visual Studioで開かないとできないこともあるらしいので、必ずVisual Studioで開くこと。</p>
+								<p>ここまできて、初めてプログラミング言語を書いていくことができるようになります。</p>
+					</div>
+			</div>
+
+
 </div>
 	</main>
 </body>
