@@ -27,7 +27,7 @@
     <br></br>
    <div>
 		<center>
-		<h1>寸止めゲーム</h1>
+		<h1>上から降ってくる矢をよけるゲーム</h1>
 		</center>
 	</div>
 	<br></br>
@@ -35,46 +35,94 @@
 	<main>
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-						<h2><font color="blue">ゲーム作成基本手順</font></h2>
-							<p>これを参考にゲームを作っていきます→<a href="https://nana-2525.github.io/doyolab/note.html" target="_blank">Unityゲーム作成基本手順</a></p>
+						<h2><font color="99ffcc">作成手順</font></h2>
+							<p>プロジェクト作成→<a href="note.html" target="_blank">基本作成手順まとめ</a></p>
+							<p>プレイヤ(ネコ)の移動処理</p>
+							<p>矢を落下させる処理</p>
+							<p>当たり判定(ネコに矢が当たった時の処理)</p>
+							<p>矢を沢山つくる工場の作成</p>
+							<p>UIを表示</p>
+							<p>GameDirectorの作成</p>
+							<p>左右のボタンを作成</p>
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-						<h2><font color="blue">スクリプト1(CarController)</font></h2>
-							<img src="images/0602.jpg" alt="" width="550" height="350">
-							<p>車を動かすスクリプト</p>
-					</div>
-			</div>
-
-			<div class="tyuukyuu1-item">
-					<div class="tyuukyuu1-text">
-						<h2><font color="blue">スクリプト2(GameDirector)</font></h2>
-							<img src="images/0602-2.jpg" alt="" width="550" height="350">
-							<p>距離情報を表示する/車が旗を超えるとゲームオーバーと表示されるスクリプト</p>
-							<p>※ゲーム作成基本手順のUIを参考に作ります</p>
-							
-						<h2><font color="blue">ゲーム実行画面</font></h2>
-							<img src="images/car2.jpg" alt="" width="550" height="350">
+						<h2><font color="99ffcc">プレイヤ(ネコ)の移動１</font></h2>
+							<p>PlayControllerスクリプトを作成する</p>
+							<p><a href="note.html" target="_blank">スクリプト作成参照</a></p>
 							<br></br>
-							<img src="images/car1.jpg" alt="" width="550" height="350">
+							<p>PC上で矢印キーの入力に応じてネコが動くようにする/PlayerCotrollerスクリプト</p>
+							<img src="images/catescape5.jpg" alt="" width="550" height="350">
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-						<h2><font color="blue">スクリプト1-2(CarController)</font></h2>
-							<img src="images/0602-3.jpg" alt="" width="550" height="350">
-							<p>車を動かすスクリプトに効果音を鳴らすスクリプトを追加</p>
+						<h2><font color="99ffcc">矢の処理</font></h2>
+							<p>矢を落下させるスクリプトを作成し、矢がネコに当たった判定を追加する</p>
+							<br></br>
+							<p矢を落下させる/>ArrowControllerスクリプト</p>
+							<img src="images/catescape2.jpg" alt="" width="550" height="350">
+							
 					</div>
 			</div>
 
 			<div class="tyuukyuu1-item">
 					<div class="tyuukyuu1-text">
-						<h2><font color="blue">実機画面</font></h2>
+						<h2><font color="99ffcc">矢を沢山つくる工場(ジェネレータ)の作成</font></h2>
+							<p>工場には設計図と呼ばれるPrefubが必要になります。</p>
+							<p>Prefubとは、同じようなものをゲーム内で沢山作って使いたいときに必要なものです。</p>
+							<p>まずは、Prefubを作ります。</p>
+							<p><a href="note.html" target="_blank">Prefubの作成手順はこちら</a></p>
+							<br></br>
+							<p>矢を生成する/ArrowGenerater</p>
+							<img src="images/catescape3.jpg" alt="" width="550" height="350">
+					</div>
+			</div>
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="99ffcc">UI(HPゲージ)を表示</font></h2>
+							<p><a href="note.html" target="_blank">UI※Imageバージョンを参照</a></p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="99ffcc">GameDirector作成</font></h2>
+							<p><a href="note.html" target="_blank">GameDirectorとスクリプト作成参照</a></p>
+							<br></br>
+							<p>UIを監督/GameDirector</p>
+							<img src="images/catescape4.jpg" alt="" width="550" height="350">
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="99ffcc">HPゲージを表示させる</font></h2>
+							<p>矢がネコに当たった時にHPゲージが減る表示がでるようにする</p>
+							<br></br>
+							<p>矢がネコに当たった時HPが減る/ArrowController</p>
+							<img src="images/catescape4.jpg" alt="" width="550" height="350">
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="99ffcc">ボタンを作る</font></h2>
+							<p>スマートフォンの画面に左右ボタンを表示させる<a href="note.html" target="_blank">UI作成手順参照</a>今回はButtonバージョン</p>
+							<br></br>
+							<p>ボタンクリックでネコが動くようにする/PlayerController</p>
+							<img src="images/catescape1.jpg" alt="" width="550" height="350">
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="99ffcc">実機結果</font></h2>
 						<video playsinline loop autoplay muted poster="roulette.jpg">
-						<source src="images/car3.mp4">
+						<source src="images/catescape5.mp4">
 						</video>
 					</div>
 			</div>
