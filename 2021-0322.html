@@ -7,62 +7,107 @@
     
     <link rel="stylesheet" href="main.css">
 </head>
-
-
 <body>
     <!--ホームに帰るためのボタン-->
-    <logotohome>
-     <h1 class="logo"><a href="index.html"><img src="images/logoggg.png" alt=""width="400" height="110"></a></h1>
-    </logotohome>
+    <div class="top">
+			    <logotohome>
+			     <h1 class="logo"><a href="index.html"><img src="images/logoggg.png" alt=""width="400" height="110"></a></h1>
+			    </logotohome>
+	</div>
+    <div class="top">
+				<nav class="nav">
+						<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="katsudou.html">Activities<a/></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="othert.html">Other</a></li>
+						</ul>
+				</nav>
+	</div>
+<br></br>
+	<main>
 		<h1>本日のまとめ</h1>
 		<p>※Git Bashインストール済みで、GitHubアカウントが作成済みの人用に新しくNew repositoryを作成するまでの手順</p>
-	<main>
-		<h2>1.【gitの初期設定】</h2>
-			<h3>git用のフォルダの作成</h3>
-					<p>まずgit用のフォルダを作りたいと思います。</p>
-					<p>Macの人はターミナルを立ち上げ、Windowsの人はGit Bashを立ち上げてください。</p>
-					<p>立ち上げたターミナルorGitBashに下記のコマンドを入力するとフォルダが作成されます。</p>
-					<p>※mkdirはmake directory(ディレクトリ(フォルダ)を作る)の略です</p>
-					<p><mark>mkdir</mark></p>
-			<h3>gitの設定</h3>
-					<p>gitの初期設定を行います。下記のコマンダーをターミナル(or GitBash)に入力してEnterを押しましょう</p>
-					<p><mark>git init</mark></p>
-					<p>次に下記のコマンドを入力し、Enterを押します。※自分のメールアドレスには、既存のアカウントで使用しているメールアドレスを入力しましょう。</p>
-					<p><mark>git config --global user.email"自分のメールアドレス"</mark></p>
-					<p>次に下記のコマンドを入力し、Enterを押します。※自分の名前には、既存のアカウントで使用しているものを使いましょう。</p>
-					<p><mark>git config --global user.name"自分の名前(アルファベット)"</mark></p>
-		<h2>2.既にあるGitHubのアカウントに新しくリポジトリーを作成する</h2>
-					<p>GitHubにログインする。<a href="https://github.com/" target="_blank">GitHub ログインページ</a></p>
-					<p>GitHub右上に表示されているアイコンの左側の+↓マークをクリックし、New repositoryをクリックし、新しいリポジトリーを作ります。</p>
-					<p><mark>Repository nameに</mark>doyolabと入力しdoyolabというリポジトリーを作成します。</p>				<p>次に、<mark>Public</mark>と<mark>Initialize this repository with a README</mark>に✓を入れます。</p>
-					<p>✓を入れた後にCreate Repositoryを押して下さい。</p>
-					<p>次に、リポジトリーのSetting内のGitHub Pagesまで移動します。</p>
-					<p>GitHub PagesのSourceの項目をmainに変更してください。変更した後Saveボタンを押して下さい。</p>
-					<p>するとYour site is published at <mark>URL(自分のHPのURL)</mark>が表示されます。※このURLが</p>
-		<h2>3.アクセストークンを作成</h2>
-					<p><a href="https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token" target="_blank">ここ</a>を参考にアクセストークンを作成します。</p>
-					<p>個人のアクセストークンは作成時しか見ることができないので、コピーして保存しておいてください。</p>
-		<h2>4.リポジトリーを自分のPCにクローン</h2>
-			<h3>gitのURLをコピー</h3>
-					<p>githubのdoyolabというリポジトリーの中の緑色でCodeと書かれたボタンを押し、リポジトリーのURLをコピーします。</p>
-			<h3>mygitに移動</h3>
-					<p>ターミナル(or GitBash)で、下記のコマンドを入力しmygitフォルダに移動します。※cdはchange directoryの略です。</p>
-					<p><mark>cd mygit</mark></p>
-			<h3>自分のPCにリポジトリーをクローンする</h3>
-					<p>ターミナル(or GitBash)で下記のコマンドを入力し、GitHubリポジトリのクローンを作成してください。(URLは上でコピーしたURLです)</p>
-					<p><mark>git clone リポジトリのURL</mark></p>
-			<h3>確認</h3>
-					<p>mygitの中にdoyolabというフォルダができて、doyolabフォルダの中にREADME.mdファイルが入っていれば成功です。</p>
-		<h2>5.htmlフォルダの作成</h2>
-					<p>まずmygitの中のdoyolabフォルダに下記の名前のファイルを作成してください。</p>
-					<p>・css</p>
-					<p>・images</p>
-					<p>次に、テキストエディタを開いて、ファイル→名前を付けて保存→名前をindex.htmlにしてdoyolabのフォルダに保存</p>
-		<h2>公開</h2>
-					<p>下記の手順でアップロードしてください。</p>
-					<p><mark>cd mygit/doyolab</mark>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)</p>
-					<p><mark>git add .</mark></p>
-					<p><mark>git commit -m"メッセージ"</mark></p>
-					<p><mark>git push</mark></p>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>1.【gitの初期設定】</h2>
+						<br></br>
+							<h2>git用のフォルダの作成</h2>
+									<p>まずgit用のフォルダを作りたいと思います。</p>
+									<p>Macの人はターミナルを立ち上げ、Windowsの人はGit Bashを立ち上げてください。</p>
+									<p>立ち上げたターミナルorGitBashに下記のコマンドを入力するとフォルダが作成されます。</p>
+									<p>※mkdirはmake directory(ディレクトリ(フォルダ)を作る)の略です</p>
+									<p><mark>mkdir</mark></p>
+						<h2>gitの設定</h2>
+								<p>gitの初期設定を行います。下記のコマンダーをターミナル(or GitBash)に入力してEnterを押しましょう</p>
+								<p><mark>git init</mark></p>
+								<p>次に下記のコマンドを入力し、Enterを押します。※自分のメールアドレスには、既存のアカウントで使用しているメールアドレスを入力しましょう。</p>
+								<p><mark>git config --global user.email"自分のメールアドレス"</mark></p>
+								<p>次に下記のコマンドを入力し、Enterを押します。※自分の名前には、既存のアカウントで使用しているものを使いましょう。</p>
+								<p><mark>git config --global user.name"自分の名前(アルファベット)"</mark></p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>2.既にあるGitHubのアカウントに新しくリポジトリーを作成する</h2>
+								<p>GitHubにログインする。<a href="https://github.com/" target="_blank">GitHub ログインページ</a></p>
+								<p>GitHub右上に表示されているアイコンの左側の+↓マークをクリックし、New repositoryをクリックし、新しいリポジトリーを作ります。</p>
+								<p><mark>Repository nameに</mark>doyolabと入力しdoyolabというリポジトリーを作成します。</p>				<p>次に、<mark>Public</mark>と<mark>Initialize this repository with a README</mark>に✓を入れます。</p>
+								<p>✓を入れた後にCreate Repositoryを押して下さい。</p>
+								<p>次に、リポジトリーのSetting内のGitHub Pagesまで移動します。</p>
+								<p>GitHub PagesのSourceの項目をmainに変更してください。変更した後Saveボタンを押して下さい。</p>
+								<p>するとYour site is published at <mark>URL(自分のHPのURL)</mark>が表示されます。※このURLが</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>3.アクセストークンを作成</h2>
+								<p><a href="https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token" target="_blank">ここ</a>を参考にアクセストークンを作成します。</p>
+								<p>個人のアクセストークンは作成時しか見ることができないので、コピーして保存しておいてください。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>4.リポジトリーを自分のPCにクローン</h2>
+						<h2>gitのURLをコピー</h2>
+								<p>githubのdoyolabというリポジトリーの中の緑色でCodeと書かれたボタンを押し、リポジトリーのURLをコピーします。</p>
+						<h2>mygitに移動</h2>
+								<p>ターミナル(or GitBash)で、下記のコマンドを入力しmygitフォルダに移動します。※cdはchange directoryの略です。</p>
+								<p><mark>cd mygit</mark></p>
+						<h2>自分のPCにリポジトリーをクローンする</h2>
+								<p>ターミナル(or GitBash)で下記のコマンドを入力し、GitHubリポジトリのクローンを作成してください。(URLは上でコピーしたURLです)</p>
+								<p><mark>git clone リポジトリのURL</mark></p>
+								<p>mygitの中にdoyolabというフォルダができて、doyolabフォルダの中にREADME.mdファイルが入っていれば成功です。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>確認</h2>
+					<h2>5.htmlフォルダの作成</h2>
+								<p>まずmygitの中のdoyolabフォルダに下記の名前のファイルを作成してください。</p>
+								<p>・css</p>
+								<p>・images</p>
+								<p>次に、テキストエディタを開いて、ファイル→名前を付けて保存→名前をindex.htmlにしてdoyolabのフォルダに保存</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2>公開</h2>
+								<p>下記の手順でアップロードしてください。</p>
+								<p><mark>cd mygit/doyolab</mark>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)</p>
+								<p><mark>git status</mark></p>
+								<p><mark>git add .</mark></p>
+								<p><mark>git commit -m"メッセージ"</mark></p>
+								<p><mark>git push</mark></p>
+					</div>
+			</div>
 	</main>
 </body>
