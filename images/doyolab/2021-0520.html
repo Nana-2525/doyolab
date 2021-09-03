@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8"/>
+ 
+    <title>2021/05/13まとめ</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="top">
+			    <logotohome>
+			     <h1 class="logo"><a href="index.html"><img src="images/logoggg.png" alt=""width="400" height="110"></a></h1>
+			    </logotohome>
+	</div>
+    <div class="top">
+				<nav class="nav">
+						<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="katsudou.html">Activities<a/></li>
+								<li><a href="contact.html">Contact</a></li>
+						</ul>
+				</nav>
+	</div>
+    <br></br>
+   <div>
+		<center>
+		<h1>Unity内でスクリプト作成</h1>
+		<p>unityでvisual syudioを使用してスクリプト/プログラミング言語を書く段階まで設定を行う。</p>
+		<p>思いがけないミスも発見しました。(完全に私のミス)その改善の仕方も記述します。</p>
+		</center>
+	<br></br>
+	<main>	
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">プロジェクトの作成(今回は2D)</font></h2>
+								<p>プロジェクトの作成は4/29報告のUnity内のプロジェクト作成を参考に以下の通りに作る。</p>
+								<p><a href="https://nana-2525.github.io/doyolab/unity.html" target="_blank">4/29報告Unityリンク</a></p>
+								<p><font color="red">プロジェクト名/Sample</font></p>
+								<p><font color="red">テンプレート/2D</font></p>
+								<img src="images/0520unity1.jpg" alt="" width="550" height="350">
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">スクリプトの作成</font></h2>
+							<img src="images/0520unity2.jpg" alt="" width="550" height="350">
+								<p>Unityエディタが起動したら、</p>
+								<p>Projectタブを選択する</p>
+								<p>プロジェクトウインドウ内で右クリック</p>
+								<p>表示されたメニュー内からCreate→C#Scriptを選択する。</p>
+							<img src="images/0520unity3.jpg" alt="" width="550" height="350">
+								<p>作成されたファイル名を「Test」に変更する。</p>
+					</div>
+			</div>
+		
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">ゲームオブジェクトの作成</font></h2>
+							<img src="images/0520unity4.jpg" alt="" width="550" height="350">
+								<p>ヒエラルキーウィンドウから+マーク→Create Emptyを選択してください。<p>
+							<img src="images/0520unity6.jpg" alt="" width="550" height="350">
+							<p>すると、GameObjectが作成されます。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">スクリプトのアタッチ</font></h2>
+							<img src="images/0520unity5.jpg" alt="" width="550" height="350">
+								<p>作成した「Test」スクリプトをヒエラルキーウィンドウの「GameObject」にドラッグ&ドロップします。</p>
+								<p>これはアタッチという作業で、スクリプトをゲームオブジェクトに結び付けることで、スクリプトを実行できるようにしています。</p>
+								<p>※アタッチできているかどうかは、インスペクターウインドウのTransform下にTest(Script)が表示されていれば成功です。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">スクリプトファイルを開く</font></h2>
+							<img src="images/0520unity7.jpg" alt="" width="550" height="350">
+								<p>「Test」をダブルクリックすると、スクリプトを記述するとVisual Studioが起動してスクリプトが表示されます。</p>
+							<img src="images/0520unity8.jpg" alt="" width="550" height="350">
+								<h1><font color="red">???????????</font></h1>
+								<p>そう。Visual Studioではなくターミナルがでてきちゃったんですー(泣)</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">痛恨のミス</font></h2>
+								<p>ここで気づいたのですが、そもそも私Visual Studioインストールしてなかったみたいなんです。</p>
+								<p>やっちゃった(´・ω・)......。</p>
+								<p>急いでインストールしました。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+							<h2><font color="blue">Visual Studioを後からインストールしてからスクリプトを開けるようにする</font></h2>
+							<img src="images/0520unity9.jpg" alt="" width="550" height="350">
+								<p>まず、Unityエディタを開きます。</p>
+								<p>開いた状態で、デスクトップ左上の「Unity」アイコンをクリック→「Preferences」をクリックします。</p>
+							<img src="images/0520unity10.jpg" alt="" width="550" height="350">
+								<p>次に、「External Tools」→「External Script Editor」をVisual Studioに変更します。</p>
+								<p>変更したらUnity エディタに戻り、再度「Test」をダブルクリックする。</p>
+							<img src="images/0520unity11.jpg" alt="" width="550" height="350">
+								<p>ちゃんとVisual Studioで開くことが出来ました。</p>
+								<p>Visual Studioで開かないとできないこともあるらしいので、必ずVisual Studioで開くこと。</p>
+								<p>ここまできて、初めてプログラミング言語を書いていくことができるようになります。</p>
+					</div>
+			</div>
+
+
+</div>
+	</main>
+</body>
+    <footer class="footer">
+				<p>&copy:Copyright Nana laboratory. All rights reserved</p>
+	</footer>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8"/>
+ 
+    <title>ゲーム作り手引書</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="top">
+			    <logotohome>
+			     <h1 class="logo"><a href="index.html"><img src="images/logoggg.png" alt=""width="400" height="110"></a></h1>
+			    </logotohome>
+	</div>
+    <div class="top">
+				<nav class="nav">
+						<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="profile.html">Profile</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="katsudou.html">Activities<a/></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="other.html">Other</a></li>
+						</ul>
+				</nav>
+	</div>
+    <br></br>
+   <div>
+		<center>
+		<h1>ゲーム作り手引書(省略箇条書き)</h1>
+		</center>
+	</div>
+	<br></br>
+	<main>	
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">プロジェクト作成後</font></h2>
+							<p>オブジェクト(画像)→<font color="99ffcc">Project</font>ウィンドウにドラック&ドロップ</p>
+							<p><font color="99ffcc">Game</font>タブ→<font color="99ffcc">Free Aspect</font>→<font color="99ffcc">VSync(Game view only)</font></p>
+							<p><font color="99ffcc">File</font>→<font color="99ffcc">Build Setting</font>→<font color="99ffcc">Platform</font>欄(iOS)→<font color="99ffcc">Switch Platform</font></p>
+							<p><font color="99ffcc">Game</font>タブ→<font color="99ffcc">Free Aspect</font>→<font color="99ffcc">iPhone X/XS 2436×1125 Landscape</font></p>
+							<p><font color="99ffcc">File</font>→<font color="99ffcc">Save As</font>→シーン名(<font color="99ffcc">GameScene</font>)で保存</p>
+							
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">オブジェクト(画像)を配置</font></h2>
+							<p>オブジェクト(画像)→<font color="99ffcc">Scene</font>ビューにドラッグ&ドロップ</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">スクリプト作成</font></h2>
+							<p><font color="99ffcc">Project</font>ウィンドウ内ダブルクリック→<font color="99ffcc">Create</font>→<font color="99ffcc">C# Script</font>→名前変更(スペース無し)</p>
+							<p>スクリプトをダブルクリックして開く</p>
+							<p>スクリプト書いて保存</p>
+							<p>スクリプトを適用したいオブジェクトにアタッチ(ドラック&ドロップ)</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">GameDirector作成</font></h2>
+							<p>Hierarchyウィンドウの+マークをクリック→Create Empty→GameDirectorに変更</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">UI</font></h2>
+							<p>UIとは、ゲームの状態や進行状況を表示するものです。(例 <a href="https://nana-2525.github.io/doyolab/2021-0602.html" target="_blank">車から旗までの距離表示など</a></p>
+							<br></br>
+							<p>UI/Textバージョン</p>
+							<p>★<font color="99ffcc">Hierarchy</font>ウィンドウ→+マーク→<font color="99ffcc">UI</font>→<font color="99ffcc">Text,※Image</font>→名前変更</p>
+							<p><font color="99ffcc">Inspector</font>→<font color="99ffcc">Rect Transform</font>(PosX,PosY,PosZ)を(0,0,0)</p>
+							<p><font color="99ffcc">width</font>(※例700),<font color="99ffcc">height</font>(※例80)</p>
+							<p><font color="99ffcc">Font Size</font>→※例64</p>
+							<p><font color="99ffcc">Alignment</font>→※例中央寄せ</p>
+							<p>スクリプト作成→名前(<font color="99ffcc">GameDirector</font>)</p>
+							<p>スクリプト書き終えたら保存</p>
+							<p><font color="99ffcc">Hierarchy</font>ウィンドウ→+マーク→<font color="99ffcc">Create Empty</font>→<font color="99ffcc">GameObject</font>→名前(<font color="99ffcc">GameDirector</font>)</p>
+							<p>スクリプト(<font color="99ffcc">GameDirector</font>)をオブジェクト(<font color="99ffcc">GameDirector</font>)にアタッチ</p>
+							<p>Game実行</p>
+							<br></br>
+							<h2><font color="green">UI/imageバージョン</font></h2>
+							<p>★までの手順は一緒。→InspectorウィンドウのSource ImageにProjectウィンドウ内の画像をドラッグ&ドロップ</p>
+							<p>HierarchyウィンドウのUIを選択→Inspectorウィンドウのアンカーポイントで画像の配置を決める→Rect TransformのPosとWidth,Heightを設定する。</p>
+							<p>InspectorウィンドウのImage Type、Fill Muthod、Fill Origin、Fill Amountを必要に応じたものに変更する</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">音楽</font></h2>
+							<p><font color="99ffcc">Hierarchy</font>ウィンドウ→オブジェクト選択</p>
+							<p><font color="99ffcc">Inspector</font>→<font color="99ffcc">Add Component</font>→<font color="99ffcc">Audio</font>→<font color="99ffcc">Audio Source</font></p>
+							<p>※<font color="99ffcc">Play On Awake</font>のチェックを外しておく</p>
+							<p>音楽を付けたいオブジェクトのスクリプトにコードを追加。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">スマートフォンで動かす</font></h2>
+							<p>USBケーブルでPCと実機(iPhone)を繋ぐ</p>
+							<p><font color="99ffcc">File</font>→<font color="99ffcc">Build Setting</font>→<font color="99ffcc">Player Setting</font>→<font color="99ffcc">Player→Other Setting</font>→<font color="99ffcc">Identification</font>→<font color="99ffcc">Override Default Bundle Identifier</font>→<font color="99ffcc">Build Identifier</font></p>
+							<p>Build Identifierをcom.(自分の名前のローマ字).(rouletteやswipeCar)などに名前を変える</p>
+							<p><font color="99ffcc">Build Setting</font>に戻る。→<font color="99ffcc">Project</font>ウィンドウ内の「<font color="99ffcc">GameScene</font>」を<font color="99ffcc">Build Setting</font>内の「<font color="99ffcc">Scene In Build</font>」にドラッグ&ドロップ</p>
+							<p>※この時他の<font color="99ffcc">GameScene</font>にチェックが入っていたらチェックを外しておく。</p>
+							<p>右下の<font color="99ffcc">Build</font>ボタンをクリック→<font color="99ffcc">Nwe Folder</font>で「プロジェクト名_iOS」を作る→「プロジェクト名_iOS」フォルダが選択された状態で、右下<font color="99ffcc">Choose</font>ボタンをクリック</p>
+							<p>プロジェクト名_iOS内の<font color="99ffcc">Unity-iPhone.xcodeproj</font>をダブルクリックしてXcodeを開く</p>
+							<p>Xcodeが開いたら→<font color="99ffcc">Unnity-iPhone</font>→<font color="99ffcc">Setting & Capabilities</font></p>
+							<p><font color="99ffcc">Automatically manage signing</font>にチェック→<font color="99ffcc">Enable Automatic</font>→<font color="99ffcc">Team</font>を<font color="99ffcc">None</font>から自分のアカウント選択</p>
+							<p>※ここで<font color="99ffcc">Build Identifier</font>の名前が→例)<font color="99ffcc">com.nana.roulette</font>ではなかったら、なおしておく。</p>
+							<p>実行するスマートフォンを右上のUnityアイコンんの付いた<font color="99ffcc">Unity-iPhone</font>→<font color="99ffcc">Any iOS Device</font>をクリックして自分のiPhoneを選択する。</p>
+							<p>実行ボタン(▶)をクリック。</p>
+					</div>
+			</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">Prefub</font></h2>
+							<p><font color="99ffcc">Prefub</font>とは、Unityにおいては設計図と呼ばれます。ゲーム内で同じものをたくさん作りたい場合は基本的にPrefubを使います。</p>
+							<p><font color="99ffcc">Prefub</font>を作りたいオブジェクトを<font color="99ffcc">Hierarchy</font>ウィンドウから<font color="99ffcc">Project</font>ウィンドウにドラッグ＆ドロップし、名前を<font color="99ffcc">○○Prefub</font>に変更する。</p>
+							<p><font color="99ffcc">Hierarchy</font>ウィンドウ内の<font color="99ffcc">Prefub</font>に作ったオブジェクトを消す。</p>
+							<p>ジェネレータースクリプト/名前：<font color="99ffcc">○○Generater</font>を作成する。</p>
+							<p>スクリプトに必要なことを書き換えた後、<font color="99ffcc">Hierarchy</font>ウィンドウ内に空のオブジェクト「<font color="99ffcc">○○Genarater</font>」を作成する。</p>
+							<p><font color="99ffcc">Project</font>ウィンドウ内の<font color="99ffcc">○○Generator</font>スクリプトを<font color="99ffcc">Hierarchy</font>ウィンドウの<font color="99ffcc">○○Generator</font>オブジェクトへドラッグ&ドロップ</p>
+							<p><font color="99ffcc">Hierarchy</font>ウィンドウの<font color="99ffcc">○○Generator</font>を選択→<font color="99ffcc">Project</font>ウィンドウ内の<font color="99ffcc">○○Prefub</font>を<font color="99ffcc">Inspector</font>ウィンドウ内の<font color="99ffcc">○○Prefub</font>欄にドラッグ&ドロップ</p>
+					</div>
+			</div>
+</div>
+
+			<div class="tyuukyuu1-item">
+					<div class="tyuukyuu1-text">
+						<h2><font color="green">その他</font></h2>
+							<p>背景画像色変更→<font color="99ffcc">Main Camera</font>→<font color="99ffcc">Inspector</font>→<font color="99ffcc">Backgrpund</font>→色決定</p>
+					</div>
+			</div>
+	</main>
+</body>
+    <footer class="footer">
+				<p>&copy:Copyright Nana laboratory. All rights reserved</p>
+	</footer>

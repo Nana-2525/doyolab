@@ -1,0 +1,186 @@
+@charest "UTF-8";
+
+/* トップページの一覧に関するスタイル----------------------------------------------*/
+figure {
+    display: inline-block;   /* インラインブロック化 */
+    margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
+    background-color: #ffffff; 
+}
+figure img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* 画像のトリミング */
+}
+figcaption {
+    width: 150px;
+    height: 80px;
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: center;      /* 中身をセンタリング */
+    word-wrap: break-word;
+}
+.top {
+		text-align: center;
+}
+/* ---------------------------------------------------------------------------*/
+
+
+/* ========== common ========== */
+@charest "UTF-8";
+
+/*すべてのWebページに適用される*/
+html {
+		font-family: sans-serif;
+}
+html * {
+		box-sizing: border-box;
+}
+body {
+		background-color: #000000;
+		background-image: url();
+}
+.wrapper {
+		margin: 0 auto 0 auto;
+		max-width: 960px;
+}
+h1 {
+		color: #ffffff;
+		font-size: 32px;
+}
+h2 {
+		color: #ffffff;
+		font-size: 22px;
+}
+p {
+		color: #ffffff;
+		line-height: 1.8;
+}
+a:link {
+		color: #d25833;
+		text-decoration: none
+}
+a:visited {
+		color: #d25833;
+}
+a:hover {
+		color: #e3937a;
+}
+a:active {
+		color: #ff6a3b;
+}
+img {
+		max-width: 100%;
+		height: auto;
+}
+
+/*すべてのページに適用 - ヘッダー - */
+.logo {
+		margin: 50px 0 40px 0;
+		line-height: 0;
+		text-align: center;
+}
+.nav li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 30px;
+}
+.nav ul {
+		border: 3px solid #ffffff;
+}
+
+/* すべてのページに適用 - フッター - */
+.footer {
+		border-top: 3px dotted #3f5170;
+}	
+/* ---------------------------------------------------------------------------*/
+/* index.html */
+.top {
+		text-align: center;
+}
+
+dl{
+	background:#cef9dc;
+	padding:10px;
+	width:550px;
+	}
+dt{
+	color:navy;
+	font-weight:bold;
+	padding:0 10px 0 0;
+	width:120px;
+	float:left;
+	margin-bottom:7px;
+	}
+dd{
+	color:#333;
+	margin-bottom:7px;
+	}
+dl{
+	content: '';
+	display: block;
+	clear: both;
+	}
+.wrap-video{
+  position:relative;
+}
+
+.wrap-video video{
+  width: 100%;
+  height:100%
+}
+
+.wrap-video .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  text-align:center;
+}
+
+.wrap-video .text p{
+  font-size:16px;
+}
+
+/* 2021-0513.html*/
+.tyuukyuu1-item {
+		display: flex;
+		border-bottom:1px dashed #ffffff;
+		padding: 20px 8px;
+}
+.tyuukyuu1-photo {
+		margin-right: 16px;
+}
+/* ---------------------------------------------------------------------------*/
+/* スマートフォン向けCSS */
+@media (max-width: 767px) {
+		/*全体 - ナビゲーション */
+		.wrapper {
+				margin: 0 8px;
+		}
+		.logo {
+				margin: 30px 0;
+		}
+		.logo img {
+				width: 200px;
+		}
+		.nav {
+				background-color: #dfddda;
+		}
+		.nav li {
+				display: block;
+		}
+
+		/* request.html - フォーム */
+		select {
+				width: 100%;
+		}
+		textarea {
+				width: 100%;
+		}
+		input[type="submit"] {
+				margin: 20px 0;
+				width: 100%;
+		}
+}
