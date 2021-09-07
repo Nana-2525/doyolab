@@ -159,17 +159,18 @@ dl{
 		display: flex;
 		margin: 0;
 		padding: 0;
+		text-align:center;
 }
 .sample li{
 		margin: 10px
 		padding: 0;
 		list-style:none;
+		text-align:center;
 }
 		
 /*------------------------------*/
  .sllider_fade {
  		position: relative;
- 		text-align: center;
  }
  
  .slider_fade > li {
