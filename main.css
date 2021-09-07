@@ -169,13 +169,14 @@ dl{
 /*------------------------------*/
  .sllider_fade {
  		position: relative;
+ 		text-align: center;
  }
  
  .slider_fade > li {
  		position: absolute;
  		list-style: none;
  		visibility: hidden;
- 		animation: anime_slider_fade 12s 0s infinite;
+ 		animation: anime_slider_fade 15s 0s infinite;
  }
  .slider_fade > li:nth-of-type(2){
  	animation-delay: 4s;
