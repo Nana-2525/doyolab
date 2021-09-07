@@ -93,6 +93,8 @@ img {
 .footer {
 		border-top: 3px dotted #3f5170;
 }	
+
+ 	
 /* ---------------------------------------------------------------------------*/
 /* index.html */
 .top {
@@ -152,6 +154,54 @@ dl{
 .tyuukyuu1-photo {
 		margin-right: 16px;
 }
+/*------------------------------*/
+.sample ul{
+		display: flex;
+		margin: 0;
+		padding: 0;
+}
+.sample li{
+		margin: 10px
+		padding: 0;
+		list-style:none;
+}
+		
+/*------------------------------*/
+ .sllider_fade {
+ 		position: relative;
+ }
+ 
+ .slider_fade > li {
+ 		position: absolute;
+ 		list-style: none;
+ 		visibility: hidden;
+ 		animation: anime_slider_fade 12s 0s infinite;
+ }
+ .slider_fade > li:nth-of-type(2){
+ 	animation-delay: 4s;
+ }
+ .slider_fade > li:nth-of-type(3){
+ 	animation-delay: 8s;
+ }
+ 
+ @keyframes anime_slider_fade {
+ 	0% {
+ 		visibility: visible;
+ 		opacity: 0;
+ 	}
+ 	15% {
+ 		opacity: 1;
+ 	}
+ 	33.3% {
+ 		opacity: 1;
+ 	}
+ 	48.3% {
+ 		opacity: 0;
+ 	}
+ 	100% {
+ 		opacity: 0;
+ 	}
+ }
 /* ---------------------------------------------------------------------------*/
 /* スマートフォン向けCSS */
 @media (max-width: 767px) {
