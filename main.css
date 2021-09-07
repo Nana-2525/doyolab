@@ -171,6 +171,7 @@ dl{
 /*------------------------------*/
  .sllider_fade {
  		position: relative;
+ 		right: 30px
  }
  
  .slider_fade > li {
