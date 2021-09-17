@@ -169,15 +169,18 @@ dl{
 }
 		
 /*------------------------------*/
- .sllider_fade {
- 		position: absolute;
- 		top: 50%;
- 		left: 50%;
- 		
+ .slider_img{
+ 	position: absolute;
+ 	left:0;
+ 	right:0;
+ 	margin:auto;
  }
- 
  .slider_fade > li {
  		position: absolute;
+ 		top:500px;
+ 		bottom:500px;
+ 		left:0;
+ 		right:0;
  		list-style: none;
  		visibility: hidden;
  		animation: anime_slider_fade 15s 0s infinite;
